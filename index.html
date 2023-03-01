@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+  <meta charset="utf-8">
+ <!-- utf-8 works for most cases -->
+  <meta name="viewport" content="width=device-width">
+ <!-- Forcing initial-scale shouldn't be necessary -->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <!-- Use the latest (edge) version of IE rendering engine -->
+  <meta name="x-apple-disable-message-reformatting">
+ <!-- Disable auto-scale in iOS 10 Mail entirely -->
+  <meta name="format-detection" content="telephone=no,address=no,email=no,date=no,url=no">
+ <!-- Tell iOS not to automatically link certain text strings. -->
+  <meta name="color-scheme" content="light">
+  <meta name="supported-color-schemes" content="light">
+  <title>Skillshare</title>
+          <script type="application/ld+json">
+[{
+  "@context": "http://schema.org/",
+  "@type": "Organization",
+
+  "logo": "https://skillshare-public-email-images.s3.amazonaws.com/social-avatar_circle_400x400.png"
+}]
+    </script>
+ <!-- The title tag shows in email notifications, like Android 4.4. -->
+
+  <!-- What it does: Makes background images in 72ppi Outlook render at correct size. -->
+
+  <!--[if gte mso 9]>
+    <xml>
+        <o:OfficeDocumentSettings>
+            <o:AllowPNG/>
+            <o:PixelsPerInch>96</o:PixelsPerInch>
+        </o:OfficeDocumentSettings>
+    </xml>
+    <![endif]-->
+
+  <!-- Web Font / @font-face : BEGIN -->
+
+  <!-- NOTE: If web fonts are not required, lines 23 - 41 can be safely removed. -->
+  <style>
+    @font-face {
+      font-family: 'KumlienProBold';
+      font-style: normal;
+      font-weight: normal;
+      src: local('KumlienProBold'), local('KumlienProBold'), url('https://static.skillshare.com/assets/css/libs/https/kumlien-pro/KumlienPro-Bold.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'GTWalsheimPro';
+      font-style: normal;
+      font-weight: normal;
+      src: local('GTWalsheimPro'), local('GTWalsheimPro'), url('https://static.skillshare.com/assets/css/libs/https/gt-walsheim-pro/gt-walsheim-pro-regular/GT-Walsheim-Pro-Regular.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'GTWalsheimProBold';
+      font-style: normal;
+      font-weight: normal;
+      src: local('GTWalsheimProBold'), local('GTWalsheimProBold'), url('https://static.skillshare.com/assets/css/libs/https/gt-walsheim-pro/gt-walsheim-pro-bold/GT-Walsheim-Pro-Bold.woff') format('woff');
+    }
+  </style>
+
+  <!-- Desktop Outlook chokes on web font references and defaults to Times New Roman, so we force a safe fallback font. -->
+
+  <!--[if mso]>
+        <style>
+            * {
+                font-family: sans-serif !important;
+            }
+        </style>
+    <![endif]-->
+
+  <!--[if !mso]>
+<!-->
+
+  <!-- insert web font reference, eg: <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'> -->
+
+  <!--<![endif]-->
+
+  <!-- Web Font / @font-face : END -->
+
+  <!-- CSS Reset : BEGIN -->
+  <style>
+    @font-face {
+      font-family: 'KumlienProBold';
+      font-style: normal;
+      font-weight: normal;
+      src: local('KumlienProBold'), local('KumlienProBold'), url('https://static.skillshare.com/assets/css/libs/https/kumlien-pro/KumlienPro-Bold.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'GTWalsheimPro';
+      font-style: normal;
+      font-weight: normal;
+      src: local('GTWalsheimPro'), local('GTWalsheimPro'), url('https://static.skillshare.com/assets/css/libs/https/gt-walsheim-pro/gt-walsheim-pro-regular/GT-Walsheim-Pro-Regular.woff') format('woff');
+    }
+    @font-face {
+      font-family: 'GTWalsheimProBold';
+      font-style: normal;
+      font-weight: normal;
+      src: local('GTWalsheimProBold'), local('GTWalsheimProBold'), url('https://static.skillshare.com/assets/css/libs/https/gt-walsheim-pro/gt-walsheim-pro-bold/GT-Walsheim-Pro-Bold.woff') format('woff');
+    }
+    /* What it does: Tells the email client that only light styles are provided but the client can transform them to dark. A duplicate of meta color-scheme meta tag above. */
+    :root {
+      Color-scheme: light;
+      supported-color-schemes: light;
+    }
+    /* What it does: Remove spaces around the email design added by some email clients. */
+    /* Beware: It can remove the padding / margin and add a background color to the compose a reply window. */
+    html,
+    body {
+      margin: 0 auto !important;
+      padding: 0 !important;
+      height: 100% !important;
+      width: 100% !important;
+      font-family: sans-serif;
+    }
+    /* What it does: Stops email clients resizing small text. */
+    * {
+      -ms-text-size-adjust: 100%;
+      -webkit-text-size-adjust: 100%;
+    }
+    /* What it does: Centers email on Android 4.4 */
+    div[style*="margin: 16px 0"] {
+      margin: 0 !important;
+    }
+    /* What it does: forces Samsung Android mail clients to use the entire viewport */
+    #MessageViewBody,
+    #MessageWebViewDiv {
+      width: 100% !important;
+    }
+    /* What it does: Stops Outlook from adding extra spacing to tables. */
+    table,
+    td {
+      mso-table-lspace: 0pt !important;
+      mso-table-rspace: 0pt !important;
+    }
+    /* What it does: Replaces default bold style. */
+    th {
+      font-weight: normal;
+    }
+    /* What it does: Fixes webkit padding issue. */
+    table {
+      border-spacing: 0 !important;
+      border-collapse: collapse !important;
+      table-layout: fixed !important;
+      margin: 0 auto !important;
+    }
+    /* What it does: Prevents Windows 10 Mail from underlining links despite inline CSS. Styles for underlined links should be inline. */
+    a {
+      text-decoration: none;
+    }
+    /* What it does: Uses a better rendering method when resizing images in IE. */
+    img {
+      -ms-interpolation-mode: bicubic;
+    }
+    /* What it does: A work-around for email clients meddling in triggered links. */
+    a[x-apple-data-detectors],
+    /* iOS */
+    .unstyle-auto-detected-links a,
+    .aBn {
+      border-bottom: 0 !important;
+      cursor: default !important;
+      color: inherit !important;
+      text-decoration: none !important;
+      font-size: inherit !important;
+      font-family: inherit !important;
+      font-weight: inherit !important;
+      line-height: inherit !important;
+    }
+    /* What it does: Prevents Gmail from changing the text color in conversation threads. */
+    .im {
+      color: inherit !important;
+    }
+    /* What it does: Prevents Gmail from displaying a download button on large, non-linked images. */
+    .a6S {
+      display: none !important;
+      opacity: 0.01 !important;
+    }
+    /* If the above doesn't work, add a .g-img class to any image in question. */
+    img.g-img+div {
+      display: none !important;
+    }
+    /* What it does: Removes right gutter in Gmail iOS app: https://github.com/TedGoas/Cerberus/issues/89  */
+    /* Create one of these media queries for each additional viewport size you'd like to fix */
+    /* iPhone 4, 4S, 5, 5S, 5C, and 5SE */
+    @media only screen and (min-device-width: 320px) and (max-device-width: 374px) {
+      u~div .email-container {
+        min-width: 320px !important;
+      }
+      .section-wrap-banner {
+        background-image: url('https://skillshare-public-email-images.s3.amazonaws.com/2021-02-bhm-mobile-background.jpg') !important;
+    }
+    }
+    /* iPhone 6, 6S, 7, 8, and X */
+    @media only screen and (min-device-width: 375px) and (max-device-width: 413px) {
+      u~div .email-container {
+        min-width: 375px !important;
+      }
+      .section-wrap-banner {
+        background-image: url('https://skillshare-public-email-images.s3.amazonaws.com/2021-02-bhm-mobile-background.jpg') !important;
+      }
+    }
+    /* iPhone 6+, 7+, and 8+ */
+        @media only screen and (min-device-width: 414px) and (max-device-width: 414px) {
+            u ~ div .email-container {
+                min-width: 414px !important;
+            }
+          .section-wrap-banner {
+        background-image: url('https://skillshare-public-email-images.s3.amazonaws.com/2021-02-bhm-mobile-background.jpg') !important;
+      }
+    }
+  </style>
+
+  <!-- CSS Reset : END -->
+
+  <!-- Progressive Enhancements : BEGIN -->
+  <style>
+    /* What it does: Hover styles for buttons */
+    .button-td,
+    .button-a {
+      transition: all 100ms ease-in;
+    }
+    .button-td-primary:hover,
+    .button-a-primary:hover {
+      background: #555555 !important;
+      border-color: #555555 !important;
+    }
+    /* Media Queries */
+    @media screen and (max-width: 700px) {
+      .email-container {
+        width: 100% !important;
+        margin: auto !important;
+      }
+      /* What it does: Forces table cells into full-width rows. */
+      .stack-column,
+      .stack-column-center {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        direction: ltr !important;
+      }
+      /* And center justify these ones. */
+      .stack-column-center {
+        text-align: center !important;
+        padding: 0 !important;
+      }
+      /* What it does: Generic utility class for centering. Useful for images, buttons, and nested tables. */
+      .center-on-narrow {
+        text-align: center !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+      }
+      table.center-on-narrow {
+        display: inline-block !important;
+      }
+      .swap-direction {
+        direction: rtl !important;
+      }
+      .swap-border {
+        border-radius: 0px 4px 4px 0px !important;
+      }
+      .small-block-tag {
+        width: 60% !important;
+      }
+      .mobile-image {
+        width: 90px !important;
+        height: auto;
+      }
+      .block-container {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+      .section-wrap {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+      .header-wrap {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+      .mobile-padding {
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+      }
+      .mobile-font {
+        font-size: 24px !important;
+        line-height: 22px !important;
+      }
+      
+      td.live-tag {
+        padding-top: 12px !important;
+      }
+            .mobile-header {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        font-size: 40px !important;
+        line-height: 38px !important;
+      }
+    }
+    /* Media Queries */
+    @media screen and (max-width: 375px) {
+      .mobile-padding {
+        padding: 32px !important;
+      }
+      .section-title {
+        padding-left: 26px !important;
+        padding-right: 26px !important;
+      }
+      .section-wrap {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+      }
+      .section-wrap-header {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        padding-bottom:50px !important;
+      }
+      .section-wrap-banner {
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+        background-image: url('https://skillshare-public-email-images.s3.amazonaws.com/2021-02-bhm-mobile-background.jpg') !important;
+      }
+      .email-title {
+        font-size: 16px !important;
+      }
+      .header-wrap {
+        padding-left: 26px !important;
+        padding-right: 26px !important;
+      }
+      .mobile-button {
+        width: 100% !important;
+      }
+   
+
+      .mobile-banner {
+        padding-left: 35px !important;
+        padding-right: 10px !important;
+      }
+      .section-text {
+    font-size: 38px !important;
+    line-height: 46px !important;
+   }
+       td.live-tag {
+                padding-top: 12px !important;
+            }
+    }
+    @media screen and (max-width: 700px) {
+    .footer-wrap {
+        padding-left: 20px !important;
+        padding-right: 20px !important;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .app-links {
+        text-align: left !important;
+    }
+
+    .app-links tr {
+        display: inline-block;
+    }
+
+    .app-links td {
+        padding: 0 16px 0 0 !important;
+    }
+
+    .stack-column-small {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        direction: ltr !important;
+    }
+}
+
+  </style>
+
+  <!-- Progressive Enhancements : END -->
+</head>
+
+<!--
+  The email background color (#CCCCCC) is defined in three places:
+  1. body tag: for most email clients
+  2. center tag: for Gmail and Inbox mobile apps and web versions of Gmail, GSuite, Inbox, Yahoo, AOL, Libero, Comcast, freenet, Mail.ru, Orange.fr
+  3. mso conditional: For Windows 10 Mail
+-->
+<body width="100%" style="margin: 0; padding: 0 !important; mso-line-height-rule: exactly; background-color: #cccccc;">
+  <center role="article" aria-roledescription="email" lang="en" style="width: 100%; background-color: #cccccc;">
+
+    <!--[if mso | IE]>
+    <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%" style="background-color: #cccccc;">
+    <tr>
+    <td>
+    <![endif]-->
+
+    <!-- Visually Hidden Preheader Text : BEGIN -->
+    <div style="max-height:0; overflow:hidden; mso-hide:all;" aria-hidden="true">
+    </div>
+
+    <!-- Visually Hidden Preheader Text : END -->
+
+    <!-- Create white space after the desired preview text so email clients don’t pull other distracting text into the inbox preview. Extend as necessary. -->
+
+    <!-- Preview Text Spacing Hack : BEGIN -->
+    <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">Check out these classes from Bash (BizTech Matters), Tuomas Kivioja, and more!
+      &zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+    </div>
+    <div style="display: none; font-size: 1px; line-height: 1px; max-height: 0px; max-width: 0px; opacity: 0; overflow: hidden; mso-hide: all; font-family: sans-serif;">&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;&zwnj;&nbsp;
+    </div>
+
+    <!-- Preview Text Spacing Hack : END -->
+
+    <!-- Email Body : BEGIN -->
+    <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0" width="700" style="margin: auto;" class="email-container">
+
+      <!-- HEADER : BEGIN -->
+      <tr>
+        <td width="100%" align="left" style="background-color:#ffffff;padding-top:17px;padding-left:50px;padding-bottom:23px;padding-right:50px;" class="header-wrap">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td align="left">
+                <a href="https://click.skillshare.com/z/omtoswpxu?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=1">
+                  <img src="https://cdn.getblueshift.com/pictures/44361/content/ss-logo-navy.png" width="90" alt="Skillshare">
+                </a>
+              </td>
+              <td align="right">
+                <a href="https://click.skillshare.com/email_browser_view?uid=38b453ec-deac-44db-9db9-61360d8631b2&mid=30156750-1db6-487b-b9ff-1cefe07b2533&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&eid=e1d0d02b-616b-03be-803f-9a019803b6f2&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_aaid=d5edc627-0f6f-46e0-b492-6ae0d9cbe64a&bsft_mime_type=html&bsft_tv=13&bsft_lx=2" style="color:#3722D3;text-decoration: none;font-family:'GTWalsheimPro', Helvetica, Arial, sans-serif !important;font-size:10px;">View in Browser</a>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <!-- HEADER : END -->
+
+      <!-- INTRO : BEGIN -->
+      <tr>
+        <td align="center" style="padding-left:50px;padding-right:50px;background-color:#ffffff;padding-bottom:70px;background-image: url('https://cdn.getblueshift.com/pictures/60759/content/live-dedicated-bg.png');background-position: top center !important;background-size: 100%;background-repeat: no-repeat;" class="section-wrap-header">
+          <table cellpadding="0" cellspacing="0" border="0" width="100%">
+            <tr>
+              <td width="100%">
+                <h1 style="font-family:'GTWalsheimProBold', Helvetica, Arial, sans-serif;font-size:80px;line-height:80px;padding: 0;margin-top:30px;margin-bottom:0;text-align: left;color:#002333;width:100%;" class="mobile-header">Personal Picks
+                </h1>
+                 <p style="width:100%;font-family:'GTWalsheimProBold', Helvetica, Arial, sans-serif;font-size:42px;line-height:32px;margin:0;padding: 0;text-align: right;color:#3722D3;" class="mobile-font"><strong>Made for Starky </strong></p>
+              </td>
+            </tr>
+          </table>
+ 
+        </td>
+      </tr>
+
+      <!-- INTRO : END -->
+
+      <!-- 2 Col New Workshops : BEGIN -->
+      <tr>
+        <td align="center" style="padding-left:50px;padding-right:50px;background-color:#FFFFFF;" class="section-wrap">
+          <table role="presentation" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+              <td style="padding-top:0px;padding-bottom:0px;">
+                <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                  <tr>
+
+                    <!-- Column : BEGIN -->
+                    <th valign="top" width="50%" class="stack-column-center" style="padding-right:20px;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        
+                        <tr>
+                          <td style="text-align: center;">
+                            <a href="https://click.skillshare.com/z/wvbae1925?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_pp=1&bsft_bk=block1&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=3">
+                            <img src="https://static.skillshare.com/uploads/video/thumbnails/8661b55bf73178fbc3627367be880fa1/448-252" width="100%" height="auto" alt="The Python Programmer: The Complete Beginners Python Bootcamp for 2023" border="0" style="width: 100%;height: auto;border-radius: 4px;">
+                            </a>
+                          </td>
+                        </tr>
+                        
+                        <tr>
+                          <td style="padding-left:20px;padding-right:20px;padding-top:20px;padding-bottom: 36px;text-align:left;">
+                            <p style="margin-bottom:16px;margin-top:0px;font-size: 22px; color: #002333;font-weight: bold;font-family:'GTWalsheimProBold',Helvetica, Arial, sans-serif;line-height:30px;">The Python Programmer: The Complete Beginners Python Bootcamp for 2023</p>
+                            <table cellspacing="0" cellpadding="0" border="0" width="74" style="margin:0 !important" class="horizontal-rule">
+                              <tr>
+                                <td align="left" valign="top" width="74" height="3" style="background-color: #3722D3; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 1px;">
+
+                                  <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                </td>
+                              </tr>
+                            </table>
+                            <p style="margin-bottom:16px;margin-top:16px;font-size:16px;color: #002333;font-family:'GTWalsheimPro',Helvetica, Arial, sans-serif;">Tony Staunton</p>
+
+                            <!-- Button : BEGIN -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin:0 !important;">
+                              <tr>
+                                <td>
+                                  <table border="0" cellspacing="0" cellpadding="0" style="margin:0 !important;">
+                                    <tr>
+                                      <td class="button-td button-td-primary-blue" align="center" style="border-radius: 4px;">
+                                        <a href="https://click.skillshare.com/z/wvbae1925?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_pp=1&bsft_bk=block1&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=4" target="_blank" class="button-a button-a-primary-blue" style="font-size:14px;font-weight:bold;font-family:'GTWalsheimProBold',Helvetica, Arial, sans-serif; color:#3722D3; text-decoration: none;border-radius: 4px; padding: 8px 16px; border: 1px solid #3722D3; display: inline-block;">Explore Now</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <!-- Button : END -->
+                          </td>
+                        </tr>
+                      </table>
+                    </th>
+
+                    <!-- Column : END -->
+
+                    <!-- Column : BEGIN -->
+                    <th valign="top" width="50%" class="stack-column-center" style="padding-left:20px;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="text-align: center;">
+                            <a href="https://click.skillshare.com/z/rzq4y0u1g?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_pp=2&bsft_bk=block1&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=5">
+                            <img src="https://static.skillshare.com/uploads/video/thumbnails/88e59eaea36ad34ea9cf509c35958bcf/448-252" width="100%" height="auto" alt="Microsoft Visio: Learn Visio and Process Diagram Basics!" border="0" style="width: 100%;height: auto;border-radius: 4px;">
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:left;padding-left:20px;padding-right:20px;padding-top:20px;padding-bottom: 36px;">
+                            <p style="margin-bottom:16px;margin-top:0px;font-size: 22px; color: #002333;font-weight: bold;font-family:'GTWalsheimProBold',Helvetica, Arial, sans-serif;line-height:30px;">Microsoft Visio: Learn Visio and Process Diagram Basics!</p>
+                            <table cellspacing="0" cellpadding="0" border="0" width="74" style="margin:0 !important" class="horizontal-rule">
+                              <tr>
+                                <td align="left" valign="top" width="74" height="3" style="background-color: #3722D3; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 1px;">
+
+                                  <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                </td>
+                              </tr>
+                            </table>
+                            <p style="margin-bottom:16px;margin-top:16px;font-size:16px;color: #002333;font-family:'GTWalsheimPro',Helvetica, Arial, sans-serif;">Bash (BizTech Matters)</p>
+
+                            <!-- Button : BEGIN -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin:0 !important;">
+                              <tr>
+                                <td>
+                                  <table border="0" cellspacing="0" cellpadding="0" style="margin:0 !important;">
+                                    <tr>
+                                      <td class="button-td button-td-primary-blue" align="center" style="border-radius: 4px;">
+                                        <a href="https://click.skillshare.com/z/rzq4y0u1g?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_pp=2&bsft_bk=block1&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=6" target="_blank" class="button-a button-a-primary-blue" style="font-size:14px;font-weight:bold;font-family:'GTWalsheimProBold',Helvetica, Arial, sans-serif; color:#3722D3; text-decoration: none;border-radius: 4px; padding: 8px 16px; border: 1px solid #3722D3; display: inline-block;">Explore Now</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <!-- Button : END -->
+                          </td>
+                        </tr>
+                      </table>
+                    </th>
+
+                    <!-- Column : END -->
+                  </tr>
+                                    <tr>
+
+                    <!-- Column : BEGIN -->
+                    <th valign="top" width="50%" class="stack-column-center" style="padding-right:20px;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="text-align: center;">
+                            <a href="https://click.skillshare.com/z/pbl9fng4f?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_pp=3&bsft_bk=block1&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=7">
+                            <img src="https://static.skillshare.com/uploads/video/thumbnails/2ebf40360078127bc4b12db1fe151105/448-252" width="100%" height="auto" alt="Unreal Engine 5:  Blueprint Scripting 101" border="0" style="width: 100%;height: auto;border-radius: 4px;">
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding-left:20px;padding-right:20px;padding-top:20px;padding-bottom: 36px;text-align:left;">
+                            <p style="margin-bottom:16px;margin-top:0px;font-size: 22px; color: #002333;font-weight: bold;font-family:'GTWalsheimProBold',Helvetica, Arial, sans-serif;line-height:30px;">Unreal Engine 5:  Blueprint Scripting 101</p>
+                            <table cellspacing="0" cellpadding="0" border="0" width="74" style="margin:0 !important" class="horizontal-rule">
+                              <tr>
+                                <td align="left" valign="top" width="74" height="3" style="background-color: #3722D3; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 1px;">
+
+                                  <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                </td>
+                              </tr>
+                            </table>
+                            <p style="margin-bottom:16px;margin-top:16px;font-size:16px;color: #002333;font-family:'GTWalsheimPro',Helvetica, Arial, sans-serif;">Greg Wondra</p>
+
+                            <!-- Button : BEGIN -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin:0 !important;">
+                              <tr>
+                                <td>
+                                  <table border="0" cellspacing="0" cellpadding="0" style="margin:0 !important;">
+                                    <tr>
+                                      <td class="button-td button-td-primary-blue" align="center" style="border-radius: 4px;">
+                                        <a href="https://click.skillshare.com/z/pbl9fng4f?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_pp=3&bsft_bk=block1&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=8" target="_blank" class="button-a button-a-primary-blue" style="font-size:14px;font-weight:bold;font-family:'GTWalsheimProBold',Helvetica, Arial, sans-serif; color:#3722D3; text-decoration: none;border-radius: 4px; padding: 8px 16px; border: 1px solid #3722D3; display: inline-block;">Explore Now</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <!-- Button : END -->
+                          </td>
+                        </tr>
+                      </table>
+                    </th>
+
+                    <!-- Column : END -->
+
+                    <!-- Column : BEGIN -->
+                    <th valign="top" width="50%" class="stack-column-center" style="padding-left:20px;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="text-align: center;">
+                            <a href="https://click.skillshare.com/z/30qml336s?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_pp=4&bsft_bk=block1&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=9">
+                            <img src="https://static.skillshare.com/uploads/video/thumbnails/320129b15a24cd5da1da8d5be1f22b0d/448-252" width="100%" height="auto" alt="Java for Beginners in One Hour" border="0" style="width: 100%;height: auto;border-radius: 4px;">
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:left;padding-left:20px;padding-right:20px;padding-top:20px;padding-bottom: 36px;">
+                            <p style="margin-bottom:16px;margin-top:0px;font-size: 22px; color: #002333;font-weight: bold;font-family:'GTWalsheimProBold',Helvetica, Arial, sans-serif;line-height:30px;">Java for Beginners in One Hour</p>
+                            <table cellspacing="0" cellpadding="0" border="0" width="74" style="margin:0 !important" class="horizontal-rule">
+                              <tr>
+                                <td align="left" valign="top" width="74" height="3" style="background-color: #3722D3; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 1px;">
+
+                                  <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                </td>
+                              </tr>
+                            </table>
+                            <p style="margin-bottom:16px;margin-top:16px;font-size:16px;color: #002333;font-family:'GTWalsheimPro',Helvetica, Arial, sans-serif;">Derek Wan</p>
+
+                            <!-- Button : BEGIN -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin:0 !important;">
+                              <tr>
+                                <td>
+                                  <table border="0" cellspacing="0" cellpadding="0" style="margin:0 !important;">
+                                    <tr>
+                                      <td class="button-td button-td-primary-blue" align="center" style="border-radius: 4px;">
+                                        <a href="https://click.skillshare.com/z/30qml336s?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_pp=4&bsft_bk=block1&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=10" target="_blank" class="button-a button-a-primary-blue" style="font-size:14px;font-weight:bold;font-family:'GTWalsheimProBold',Helvetica, Arial, sans-serif; color:#3722D3; text-decoration: none;border-radius: 4px; padding: 8px 16px; border: 1px solid #3722D3; display: inline-block;">Explore Now</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <!-- Button : END -->
+                          </td>
+                        </tr>
+                      </table>
+                    </th>
+
+                    <!-- Column : END -->
+                  </tr>
+                                                   <tr>
+
+                    <!-- Column : BEGIN -->
+                    <th valign="top" width="50%" class="stack-column-center" style="padding-right:20px;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="text-align: center;">
+                            <a href="https://click.skillshare.com/z/up2wk3v4b?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_pp=5&bsft_bk=block1&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=11">
+                            <img src="https://static.skillshare.com/uploads/video/thumbnails/9ff12a2a2ce95c6d951bcea119be4dc8/448-252" width="100%" height="auto" alt="Django Ecommerce Course | Build an Advanced Django Web Application" border="0" style="width: 100%;height: auto;border-radius: 4px;">
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="padding-left:20px;padding-right:20px;padding-top:20px;padding-bottom: 36px;text-align:left;">
+                            <p style="margin-bottom:16px;margin-top:0px;font-size: 22px; color: #002333;font-weight: bold;font-family:'GTWalsheimProBold',Helvetica, Arial, sans-serif;line-height:30px;">Django Ecommerce Course | Build an Advanced Django Web Application</p>
+                            <table cellspacing="0" cellpadding="0" border="0" width="74" style="margin:0 !important" class="horizontal-rule">
+                              <tr>
+                                <td align="left" valign="top" width="74" height="3" style="background-color: #3722D3; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 1px;">
+
+                                  <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                </td>
+                              </tr>
+                            </table>
+                            <p style="margin-bottom:16px;margin-top:16px;font-size:16px;color: #002333;font-family:'GTWalsheimPro',Helvetica, Arial, sans-serif;">Rathan Kumar</p>
+
+                            <!-- Button : BEGIN -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin:0 !important;">
+                              <tr>
+                                <td>
+                                  <table border="0" cellspacing="0" cellpadding="0" style="margin:0 !important;">
+                                    <tr>
+                                      <td class="button-td button-td-primary-blue" align="center" style="border-radius: 4px;">
+                                        <a href="https://click.skillshare.com/z/up2wk3v4b?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_pp=5&bsft_bk=block1&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=12" target="_blank" class="button-a button-a-primary-blue" style="font-size:14px;font-weight:bold;font-family:'GTWalsheimProBold',Helvetica, Arial, sans-serif; color:#3722D3; text-decoration: none;border-radius: 4px; padding: 8px 16px; border: 1px solid #3722D3; display: inline-block;">Explore Now</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <!-- Button : END -->
+                          </td>
+                        </tr>
+                      </table>
+                    </th>
+
+                    <!-- Column : END -->
+
+                    <!-- Column : BEGIN -->
+                    <th valign="top" width="50%" class="stack-column-center" style="padding-left:20px;">
+                      <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <tr>
+                          <td style="text-align: center;">
+                            <a href="https://click.skillshare.com/z/nfivsgiqn?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_pp=6&bsft_bk=block1&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=13">
+                            <img src="https://static.skillshare.com/uploads/video/thumbnails/4afd51f7fbceef714d4faac6538459a9/448-252" width="100%" height="auto" alt="How to Successfully Learn to Code and Become a Software Developer - A Step-by-Step Framework" border="0" style="width: 100%;height: auto;border-radius: 4px;">
+                            </a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td style="text-align:left;padding-left:20px;padding-right:20px;padding-top:20px;padding-bottom: 36px;">
+                            <p style="margin-bottom:16px;margin-top:0px;font-size: 22px; color: #002333;font-weight: bold;font-family:'GTWalsheimProBold',Helvetica, Arial, sans-serif;line-height:30px;">How to Successfully Learn to Code and Become a Software Developer - A Step-by-Step Framework</p>
+                            <table cellspacing="0" cellpadding="0" border="0" width="74" style="margin:0 !important" class="horizontal-rule">
+                              <tr>
+                                <td align="left" valign="top" width="74" height="3" style="background-color: #3722D3; border-collapse:collapse; mso-table-lspace: 0pt; mso-table-rspace: 0pt; mso-line-height-rule: exactly; line-height: 1px;">
+
+                                  <!--[if gte mso 15]>&nbsp;<![endif]-->
+                                </td>
+                              </tr>
+                            </table>
+                            <p style="margin-bottom:16px;margin-top:16px;font-size:16px;color: #002333;font-family:'GTWalsheimPro',Helvetica, Arial, sans-serif;">Tuomas Kivioja</p>
+
+                            <!-- Button : BEGIN -->
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0" style="margin:0 !important;">
+                              <tr>
+                                <td>
+                                  <table border="0" cellspacing="0" cellpadding="0" style="margin:0 !important;">
+                                    <tr>
+                                      <td class="button-td button-td-primary-blue" align="center" style="border-radius: 4px;">
+                                        <a href="https://click.skillshare.com/z/nfivsgiqn?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_pp=6&bsft_bk=block1&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=14" target="_blank" class="button-a button-a-primary-blue" style="font-size:14px;font-weight:bold;font-family:'GTWalsheimProBold',Helvetica, Arial, sans-serif; color:#3722D3; text-decoration: none;border-radius: 4px; padding: 8px 16px; border: 1px solid #3722D3; display: inline-block;">Explore Now</a>
+                                      </td>
+                                    </tr>
+                                  </table>
+                                </td>
+                              </tr>
+                            </table>
+
+                            <!-- Button : END -->
+                          </td>
+                        </tr>
+                      </table>
+                    </th>
+
+                    <!-- Column : END -->
+                  </tr>
+                </table>
+              </td>
+            </tr>
+            <tr>
+              <td align="center" style="padding-top:36px;padding-bottom:46px;padding-left:35px;padding-right:35px;">
+
+                <!-- Button : BEGIN -->
+        <table role="presentation" cellspacing="0" cellpadding="0" border="0" class="center-on-narrow">
+         <tr>
+          <td class="button-td button-td-primary-bgreen" style="border-radius: 4px;background-color:#00FF84;">
+           <a class="button-a button-a-primary-bgreen" href="https://click.skillshare.com/z/kgu3tg7g9?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=15" style="border: 1px solid #00FF84; font-family:'GTWalsheimProBold',Helvetica, Arial, sans-serif; font-size: 16px; line-height: 16px; text-decoration: none; padding: 12px 40px; color: #002333; display: block; border-radius: 4px;font-weight:bold;text-align:center;">Browse More Classes</a>
+          </td>
+         </tr>
+        </table>
+
+        <!-- Button : END -->
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+ 
+       
+      <!-- Footer : BEGIN -->
+                  <!-- BLUE Footer : BEGIN -->
+            <tr>
+                <td width="100%" align="center" valign="top" style="padding: 32px 60px;background-color:#002333;" class="footer-wrap">
+                    <table width="100%" border="0" cellpadding="0" cellspacing="0" align="center" style="max-width: 700px;">
+                            <tr>
+                                <td width="100%">
+                                    <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                        <tr>
+                                            <td valign="top" width="50%" class="stack-column-small" style="text-align: left !important;padding-bottom:16px 0 !important;">
+                                                <a href="https://click.skillshare.com/z/xoypcya03?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=16">
+													<img src="https://cdn.getblueshift.com/pictures/44195/content/ss-logo-wht.png" width="111">
+												</a>
+                                                <table border="0" cellpadding="0" cellspacing="0" style="margin:0 !important;">
+                                                    <tr>
+                                                        <td style="padding-top:16px;padding-bottom:16px;padding-right:18px;"><a href="https://click.skillshare.com/z/ev5csplm5?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=17"><img src="https://cdn.getblueshift.com/pictures/44196/content/facebook-color.png" alt="Skillshare on Facebook" width="22"></a></td>
+                                                        <td style="padding-top:16px;padding-bottom:16px;padding-right:18px;"><a href="https://click.skillshare.com/z/qj4t702gq?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=18"><img src="https://cdn.getblueshift.com/pictures/44197/content/twitter-color.png" alt="Skillshare on Twitter" width="22"></a></td>
+                                                        <td style="padding-top:16px;padding-bottom:16px;padding-right:18px;"><a href="https://click.skillshare.com/z/uwymwtjpz?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=20"><img src="https://cdn.getblueshift.com/pictures/44198/content/instagram-color.png" alt="Skillshare on Instagram" width="22"></a></td>
+                                                        <td style="padding-top:16px;padding-bottom:16px;padding-right:18px;"><a href="https://click.skillshare.com/z/rfmarwgsb?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=21"><img src="https://cdn.getblueshift.com/pictures/110720/content/ss-tiktok-icon.png" alt="Skillshare on TikTok" width="22"></a></td>
+                                                        <td style="padding-top:16px;padding-bottom:16px;"><a href="https://click.skillshare.com/z/zzliavv7q?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=22"><img src="https://cdn.getblueshift.com/pictures/110722/content/ss-youtube_-icon.png" alt="Skillshare on YouTube" width="22"></a></td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                            <td valign="bottom" align="right" class="stack-column-small app-links" width="50%" style="vertical-align:bottom;padding-bottom:12px;text-align:right;">
+                                                <table width="100%" cellpadding="0" cellspacing="0" border="0">
+                                                    <tr>
+                                                        <td width="100%" align="right"><a href="https://click.skillshare.com/z/uqy28w27w?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=23"><img src="https://cdn.getblueshift.com/pictures/44199/content/appstore.png" alt="Appstore" width="112"></a></td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td width="100%" align="right" style="padding-top:12px;"><a href="https://click.skillshare.com/z/vtgw18t5z?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_mime_type=html&bsft_tv=13&bsft_lx=24"><img src="https://cdn.getblueshift.com/pictures/44200/content/google-play.png" alt="Google Play" width="112"></a></td>
+                                                    </tr>
+                                                </table> 
+                                            </td>
+                                        </tr>
+                                    </table> 
+                                </td>
+                            </tr>
+                            <tr>
+                                <td valign="middle" style="font-family:'GTWalsheimProBold', Helvetica, Arial, sans-serif;font-size: 12px;color:#FFFFFF;">
+                                    215 Park Avenue South, 11th Floor<br>New York, NY 10003
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td width="100%" valign="top">
+                                    <table width="100%" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td align="left" style="font-family: Arial, Helvetica, sans-serif;font-size:10px;line-height: 14px;color:#FFFFFF;padding-top:15px;">
+
+
+
+
+Being creative can be exhausting.<br>
+So if you need a break,
+<a href="https://skillshare.com/settings/email-notifications?uuid=6f716532-8c71-11ec-8429-0a0cc8fe5e67&bsft_unsub=https%3A%2F%2Fclick.skillshare.com%2Fcustomer%2Funsubscribe%3Fuid%3D38b453ec-deac-44db-9db9-61360d8631b2%26mid%3D30156750-1db6-487b-b9ff-1cefe07b2533%26txnid%3D33d32a3e-37a1-418d-88de-83bf5169c491%26eid%3De1d0d02b-616b-03be-803f-9a019803b6f2%26bsft_ek%3D2023-02-26T15%253A00%253A42Z%26bsft_aaid%3Dd5edc627-0f6f-46e0-b492-6ae0d9cbe64a" style="color:#00FF84;text-decoration: none;">unsubscribe here.</a>
+                                            </td>
+                                        </tr>
+                                    </table> 
+                                </td>
+                            </tr>
+                    </table>
+                </td>
+            </tr>
+            <!-- Footer : END -->
+
+      <!-- Footer : END -->
+    </table>
+
+    <!-- Email Body : END -->
+
+    <!--[if mso | IE]>
+    </td>
+    </tr>
+    </table>
+    <![endif]-->
+  </center>
+<img src="https://click.skillshare.com/track?uid=38b453ec-deac-44db-9db9-61360d8631b2&txnid=33d32a3e-37a1-418d-88de-83bf5169c491&bsft_aaid=d5edc627-0f6f-46e0-b492-6ae0d9cbe64a&eid=e1d0d02b-616b-03be-803f-9a019803b6f2&mid=30156750-1db6-487b-b9ff-1cefe07b2533&bsft_ek=2023-02-26T15%3A00%3A42Z&bsft_tv=13&bsft_mime_type=html&a=open" border="0" width="1px" height="1px" alt="" style="margin: 0 !important; padding: 0 !important; border: 0 !important; height: 1px !important; width: 1px !important;" data-bsft-open-pixel=""><img src="http://email.skillshare.com/wf/open?upn=xrKFsieyB1OkxBbl2v6O4JLhgqTz5yxOvFv8oTP3JnpKOpIXVA2OY-2Fn-2FLfCf-2Bkl1rYlr8oHoAPv8UKMbfsroVuikhXlh1b9iLpMVBQNhyju6P8nNl03AeyEQ68Yw70akSJDaDYq0Ja4h7xcWrP0da4UhXFPbsNEtKS6CeSFsVffJ-2FcKyHtjbQfDnL0rNUkhJN31iOoID8FZzoBBZpbR2NoGlv9CTnYZoKujSmHw5CPvYG807ic6EYfTL53QpPFL7BXX9-2FwmeEioGAspVvcJ4MAik7gL5ePpwrRDl3XbSahGnZPAlLKuNowEazCop48WWz1z3Yegrd3ZG5GkNKwVkdBi0v0RjHFPAcoSoUi7Mc0T1kLOZdXsVZSy3EfrGTRKipbGQ3sKG8VhG1PEOXNfpKdyF9ecnwj5-2Bf9jrCFiriK9myOtzB8paCObEZ7x-2BIDki-2FmhfXIxhpSP0W8PUDxnfbH5gSrNNOyOw3IVuqRCKYctymO-2F1py5bulp4iiEyk72Ed-2FhlesNPNWnglWQadCqUlPFTZgLACy7VKMeQKZgCzDeZ-2BJiX9bumc8RUbptQZqFSW8z2w7zgvIhSqri3-2BBygyN9uyIc1eH147PW5RSInNSxnoy1rElGVWH9C14E5vAkv8-2BWIoIm6v1M01mOTgBgoYN81OUC7RYM5mZXmqgdGRwGsAB-2BCbcXaulW4FhwCO2vTaHODyRorpegw-2FwsRJwkUerSeV1PLRDxY-2FP6JN9IqAmUK7YyDtOp05LzJRpkSoKkaYQt9pXJT5tZZK-2Bzc27Sv5YjPsc9ju6kJvsgz3JhtuSBTg1Z5dcVulglgn6dCIq4OsoAEV5e6w4-2Fvas8tBH4ZP-2FRp4vr2r9fMGgyQU93tQOQ0m-2BKOYyujAAuzKqJup5U5VGIy1bBlN01XffAl8O-2BQ9IogoAhTUl9YGsmm5N647f-2BqrMatj8LYuERMgwndcc-2BtYH99i9cc5WD440q8lhkaUOKOmQV9HzICad0Xmbpqs650Z3AFoGYKBk3rA4-2B0e9-2FWCQP6rNcn1s4bZTv-2B-2BW5dqpDS1T6iWj4AZvGCDMaVVjSH3VmD5XAJ-2FZE-2B7aFfXBDrmgYzSWu5cXNXur5o3JcYGtjQgXLf78UNBKXjaZicVwd4OB4cK7M6QWQ8-2Bk0CrkNJzQWGa5PtjTg-2BG1hvMsCCGj0qWQv57OeVtYpd30Ub0bVSeQl-2BwhdICzH9HbQCFYMM2M2ll-2Blf7tTE6mzwrUfCRdgzszTG4SsrEqYVmAKdx46adzGpZ-2BD1sMSqmEaWoOwFPqb8HQ7CRE5QLwBvo-2BJAwAGQfQVzKe-2BgDgAaek5wKTFuKPZguqYo0aEt5sWM7IfDfPYOH46wFTleclJQnV6c1PFULrKXsu-2BEjkmEiKr59wnhz5r4Q6fVa6XcWvyYM2ivC94ZbceyCDRBA7Qx9na03A-3D-3D" alt="" width="1" height="1" border="0" style="height:1px !important;width:1px !important;border-width:0 !important;margin-top:0 !important;margin-bottom:0 !important;margin-right:0 !important;margin-left:0 !important;padding-top:0 !important;padding-bottom:0 !important;padding-right:0 !important;padding-left:0 !important;"/></body>
+</html>
